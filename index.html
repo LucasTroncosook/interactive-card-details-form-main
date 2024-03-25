@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="gradient">
+      <img src="./images/bg-main-desktop.png" alt="bg-main-desktop">
+    </div>
+
+    <figure class="front-card">
+      <img src="./images/bg-card-front.png" alt="bg-card-front">
+      <section class="section-front">
+        <section class="section-info">
+          <figure>
+            <img src="./images/card-logo.svg" alt="">
+          </figure>
+  
+          <section class="text-card-front">
+            <span id="number-front">0000 0000 0000 0000</span>
+            <section>
+              <span id="name-user">Jane Appleseed</span>
+              <span id="date-front">00/00</span>
+            </section>
+          </section>
+        </section>
+      </section>
+    </figure>
+
+    <figure class="back-card">
+      <img src="./images/bg-card-back.png" alt="bg-card-back">
+      <span id="number-back">000</span>
+    </figure>
+
+    <section class="formulario">
+      <form class="formulario-section" id="form">
+        <fieldset>
+          <legend>Cardholder Name</legend>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="card-holder" class="input-error" autocomplete="off">
+        </fieldset>
+
+        <fieldset>
+          <legend>Card Number</legend>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card-number">
+          <span id="error-card-number"></span>
+        </fieldset>
+          <section class="exp">
+              <fieldset>
+                <legend>Exp. Date (MM/YY)</legend>
+                <section>
+                  <input type="text" placeholder="MM" id="MM">
+                  <input type="text" placeholder="YY" id="YY">
+                </section>
+                <span id="MMYY"></span>
+              </fieldset>
+              <fieldset>
+                <legend>CVC</legend>
+                <input type="text" placeholder="e.g. 123" id="CVC">
+                <span id="CVC-messenger"></span>
+              </fieldset>
+          </section>
+          <input type="submit" value="Confirm" id="submit">
+      </form>
+
+      <section class="thank-you" id="thank-you">
+        <figure>
+          <img src="./images/icon-complete.svg" alt="">
+        </figure>
+        <section>
+          <h3>Thank you!</h3>
+          <p>We've added your card details</p>
+        </section>
+        <button id="continue">Continue</button>
+      </section>
+    </section>
+  </section>
+  <!-- 
+
+
+  Completed state start 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./js/verificacion.js"></script>
+</body>
+</html>
